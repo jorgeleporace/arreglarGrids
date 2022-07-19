@@ -1,0 +1,438 @@
+/**Llamando a las Tipografias por CSS**/
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500&family=Roboto:ital,wght@0,400;0,500;1,300&display=swap');
+/**Mis Fuentes-font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Slab', serif;**/
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500&family=Roboto:ital,wght@0,400;0,500;0,700;1,300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Slab', serif;
+    background-color: #e5e5f7;
+    background-image:  radial-gradient(#c657db 0.5px, transparent 0.5px), radial-gradient(#c657db 0.5px, #e5e5f7 0.5px);
+    background-size: 20px 20px;
+    background-position: 0 0,10px 10px; 
+    min-height: 100vh;
+}
+.grillaHome{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+    "logo nombreGls padreNavBar"
+    " titulo titulo titulo"
+    "introTexto introTexto introTexto"
+    ;
+}
+.logo{
+    grid-area: logo;
+}
+.nombreGls{
+    grid-area: nombreGls;
+}
+.padreBarraNav{
+    grid-area: padreBarraNav;
+}
+.logo .nombreGls .padreBarraNav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    width: 100%;
+}
+.grillaCursos{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+    "padreBarraNav padreBarraNav padreBarraNav"
+    "tituloCursos tituloCursos tituloCursos"
+    "curso1 curso2 curso3"
+    "curso4 curso5 curso6"
+    "curso7 curso8 curso9"
+    "curso10 curso11 curso12"
+    "curso13 curso14 curso15"
+    "curso16 curso17 curso18"
+    "pepe pepe pepe";
+    gap: 20px;
+}
+.headerCourses{
+    grid-area: header;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 200px;
+    background-color: rgb(255, 255, 255);
+}
+.estiloCursos img {
+    width: 50%;
+}
+.curso1{
+    grid-area: curso1;
+}
+.curso2{
+    grid-area: curso2;
+}
+.curso3{
+    grid-area: curso3;
+}
+.curso4{
+    grid-area: curso4;
+}
+.curso5{
+    grid-area: curso5;
+}
+.curso6{
+    grid-area: curso6;
+}
+.curso7{
+    grid-area: curso7;
+}
+.curso8{
+    grid-area: curso8;
+}
+.curso9{
+    grid-area: curso9;
+}
+.curso10{
+    grid-area: curso10;
+}
+.curso11{
+    grid-area: curso11;
+}
+.curso12{
+    grid-area: curso12;
+}
+.curso13{
+    grid-area: curso13;
+}
+.curso14{
+    grid-area: curso14;
+}
+.curso15{
+    grid-area: curso15;
+}
+.curso16{
+    grid-area: curso16;
+}
+.curso17{
+    grid-area: curso17;
+}
+.curso18{
+    grid-area: curso18;
+}
+.tituloCursos{
+    grid-area: titulo;
+    text-align: center;
+    color: black;
+}
+.grillaContact{
+    display: grid;
+    grid-template-columns: repeat(3) 1fr;
+    grid-template-areas: 
+    "padreBarraNav padreBarraNav padreBarraNav"
+    "bannerPrincipalContacto bannerPrincipalContacto bannerPrincipalContacto"
+    "formularioContacto formularioContacto formularioContacto";
+}
+.padreBarraNav{
+    grid-area: padreBarraNav;
+}
+.bannerPrincipalContacto{
+    grid-area: bannerPrincipalContacto;
+}
+.formularioContacto{
+    grid-area: formularioContacto;
+}
+.gillaProfile{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "grillaProfile grillaProfile GrillaProfile"
+    "formSignIn formSignIn formSignIn"
+    "pepe pepe pepe";
+}
+.grillaProfile{
+    grid-area: grillaProfile;
+}
+.formSignIn{
+    grid-area: formSignIn;
+}
+.pepe{
+    grid-area: pepe;
+}
+.formularioHome{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "formularioHome formularioHome formularioHome  "
+    "pepe pepe pepe";
+}
+.placeholders{
+    grid-area: formulariohome;
+}
+.nombreFormulario{
+    grid-area: formulariohome;
+}
+.nombreFormulario{
+    background: #ffff;
+    margin: auto;
+    width: 90%;
+    max-width: 400px;
+    padding: 4.5em 3em;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px -5px rgb(000/30%);
+    text-align: center;
+}
+.formSignIn{
+    background: #ffff;
+    margin: auto;
+    width: 90%;
+    max-width: 400px;
+    padding: 4.5em 3em;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px -5px rgb(000/30%);
+    text-align: center;
+}
+.formTitle{
+    font-size: 2rem;
+    margin-bottom: .5em;
+}
+.formParagraph{
+    font-weight: 300;
+}
+.formLink{
+    font-weight: 400;
+    color: black;
+}
+.formContainer{
+    margin-top: 3em;
+    display: grid;
+    gap: 2.5em;
+}
+.formGroup{
+    position: relative;
+    --color: #5757577e;
+}
+.formInput{
+    width: 100%;
+    background: none;
+    color:#706c6c;
+    font-size: 1rem;
+    padding: .6em .3em;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid var(--color);
+    font-family: 'Roboto', sans-serif;
+}
+.formInput:not(placeholder-shown){
+    color: #4d4646;
+}
+.formInput:focus + .formLabel
+.formInput:not(placeholder-shown) + .formLabel{
+    transform: translateY(-12px) scale(.7);
+    transform-origin:left top;
+    color: #3866f2;
+}
+.formLabel{
+    color: var(--color);
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 5px;
+    transform: translateY(10px);
+    transition: transform .5s, color .3s;
+}
+.formSubmit{
+    background: #3866f2;
+    color: #ffff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+    padding: .8em 0;
+    border: none;
+    border-radius: .5em;
+}
+.formLine{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #3866f2;
+    transform: scale(0);
+    transform: left bottom;
+}
+.formInput:focus ~ .formLabel
+.formInput:not(placeholder-shown)~.formLabel{
+    transform:scale(1);
+}
+@media (max-width:425px){
+    .formTitle{
+        font-size:1.8rem;
+    }
+}
+img{
+    max-width:100%;
+    width:300px;
+    height:250p;
+}
+.gridStaff{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+@media (min-width: 768px){
+    .gridStaff{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+}
+}
+@media (min-width: 992px){
+    .gridStaff{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+.logo{
+    width: 8%;
+    margin-left: 10px;
+}
+    body{
+        width: 100%;
+        margin: 0%;
+        padding: 0;
+        background-color: rgb(251, 251, 251);
+    }
+    header{
+        background-color: rgb(221, 236, 247);
+        padding: 20px;
+    }
+    aricle{
+        width: 100%;
+        margin: 0%;
+        padding: 0;
+    }
+    section{
+        width: 100%;
+        margin: 0%;
+        padding: 0;
+    }
+    main{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+/*:::::Pie de Pagina*/
+.pie-pagina{
+    width: 100%;
+    background-color: #1a2a3d;
+}
+.pie-pagina .grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+}
+.padreBarraNav{
+    display: flex;
+    flex-direction: row;
+    flex-flow: row wrap;
+    justify-content: end;
+    align-items: flex-end;
+}
+.logoConTexto, .logo, .bienvenidaYparrafo{
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    align-items: center;
+}
+.barraNav{
+    list-style: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    color:  rgb(0, 0, 0);
+}
+.barraNav li a{
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    width: 100%;
+}
+.aviationEnglish{
+    width: 100%;
+    margin: auto;
+}
+.photoDevelopers div{
+    width: 100%;
+    margin: auto;
+}
+.bienvenidaYparrafo{
+    display: flex;
+    justify-content: center;
+}
+.titulo{
+    padding-top: 1rem;
+    font-size: 2.5rem;
+}
+.basicGrammar{
+    width: 100%;
+}
+ul li :hover{
+    display: block;
+}
+li{
+    display: inline-block;
+    font-size: 20px;
+    text-align: center;
+    margin-right: 20px;
+}
+.nombreGls{
+    color: rgb(52, 52, 52);
+    display: flex;
+    justify-content: left;
+}
+h1{
+    color: rgb(255, 255, 255);
+    padding: 40px;
+    margin: 80px 40px 80px 40px;
+    text-align: center;
+    position: relative;
+    top: 40px; 
+    left: 40px;
+}
+h4{
+    color: rgb(52, 52, 52);
+    padding: 40px;
+    position: relative;
+    top: 40px; 
+    left: 40px;
+}
+p{
+    color: rgb(52, 52, 52);
+    padding: 40px;
+    border-radius: 10px solid blue;
+}
+h2{
+    color: rgb(52, 52, 52);
+    padding: 40px;
+    border-radius: 10px solid blue;
+}
+h3{
+    color: rgb(52, 52, 52);
+    padding: 40px;
+    border-radius: 10px solid blue;
+}
+footer{
+    padding: auto;
+    background-color: rgb(245, 248, 250);
+}
+small{
+    padding: auto;
+    color: rgb(251, 251, 251);
+    display: flex;
+    justify-content: center;
+}
